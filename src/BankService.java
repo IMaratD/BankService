@@ -1,11 +1,11 @@
 public class BankService {
-    double calculate (double costs, int cashback) {
-        double money = costs * cashback / 100.0;
+    double calculate (double costs, int percent) {
+        double cashback = costs * percent / 100.0;
         int limit = 3000;
-        if (money > limit) {
+        if (cashback > limit) {
             return limit;
         }
-        return money;
+        return cashback;
 
     }
 
